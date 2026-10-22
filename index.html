@@ -85,6 +85,12 @@
         </div>
 
         <div class="header-right">
+          <!-- Nút Quét mã QR cho điện thoại -->
+          <button class="pill-badge" id="btn-header-qr" title="Quét mã QR để mở trên điện thoại">
+            <span>📱</span>
+            <span style="font-weight:600;">Mở trên điện thoại</span>
+          </button>
+
           <!-- Nút chuyển Chế độ Giáo viên nổi bật -->
           <button class="btn-teacher-mode" id="btn-header-teacher">
             <span>🧑‍🏫</span>
@@ -632,6 +638,30 @@
         <button class="btn-secondary" id="btn-result-back-map">🗺️ Về bản đồ</button>
         <button class="btn-primary" id="btn-result-next-level">Màn tiếp theo →</button>
       </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MODAL MÃ QR CHO ĐIỆN THOẠI (MOBILE QR)
+       ========================================== -->
+  <div class="modal-backdrop" id="mobile-qr-modal">
+    <div class="modal-box" style="max-width: 420px; text-align: center;">
+      <h3 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 8px;">📱 Quét Mã QR Mở Trên Điện Thoại</h3>
+      <p style="font-size: 0.88rem; color: #64748b; margin-bottom: 20px;">
+        Đảm bảo điện thoại của bạn đang kết nối cùng mạng Wi-Fi với máy tính này:
+      </p>
+
+      <div style="background: #ffffff; padding: 16px; border: 2px dashed #3b82f6; border-radius: 16px; display: inline-block; margin-bottom: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.06);">
+        <img src="assets/images/qr_mobile.png" alt="Mã QR Math Hero" width="220" height="220" style="display: block; border-radius: 8px;" />
+      </div>
+
+      <div style="background: #f1f5f9; padding: 10px 14px; border-radius: 8px; font-family: monospace; font-size: 0.95rem; font-weight: 700; color: #1e40af; margin-bottom: 20px; word-break: break-all;">
+        http://192.168.1.14:8888
+      </div>
+
+      <button class="btn-primary" id="btn-close-qr-modal" style="width: 100%; justify-content: center;">
+        Đóng cửa sổ
+      </button>
     </div>
   </div>
 

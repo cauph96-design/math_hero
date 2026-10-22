@@ -110,6 +110,23 @@ class MathHeroApp {
       });
     });
 
+    // Nút mở QR Modal
+    const btnQr = document.getElementById("btn-header-qr");
+    const qrModal = document.getElementById("mobile-qr-modal");
+    const btnCloseQr = document.getElementById("btn-close-qr-modal");
+    if (btnQr && qrModal) {
+      btnQr.addEventListener("click", () => {
+        SoundEffects.playClick();
+        qrModal.classList.add("active");
+      });
+    }
+    if (btnCloseQr && qrModal) {
+      btnCloseQr.addEventListener("click", () => {
+        SoundEffects.playClick();
+        qrModal.classList.remove("active");
+      });
+    }
+
     // Nút mở Teacher Mode trên Top Bar
     const btnTeacher = document.getElementById("btn-header-teacher");
     if (btnTeacher) {
